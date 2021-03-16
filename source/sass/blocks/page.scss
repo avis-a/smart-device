@@ -5,3 +5,12 @@
   background-color: $basic_white;
   margin: 0;
 }
+
+.page__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}

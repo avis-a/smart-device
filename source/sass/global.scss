@@ -3,6 +3,19 @@ img {
   height: auto;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h2, h3 {
+  font-family: "Roboto Condensed";
+}
+
+p {
+  font-family: "PT Mono";
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -1,0 +1,14 @@
+.copyright {
+  border-top: 1px solid red;
+}
+
+.copyright__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.copyright__item {
+  color: $navy_blue;
+  opacity: 0.5;
+}

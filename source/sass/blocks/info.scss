@@ -1,0 +1,74 @@
+.info {
+  color: $basic_white;
+  padding-top: 15%;
+  padding-bottom: 15.3%;
+  margin-top: -100px;
+  background-image: url("../img/info-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/info-background-2x.jpg");
+  }
+}
+
+.info__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 71px;
+  align-items: center;
+}
+
+.info__wrapper {
+  position: relative;
+}
+
+.info__wrapper > h1 {
+  @include text(80px, 94px, 700);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+
+.info__wrapper > p {
+  @include text(22px, 34px, 400);
+  position: relative;
+  padding-left: 94px;
+}
+
+.info__wrapper > p::before {
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  width: 66px;
+  height: 2px;
+  background-color: $basic_white;
+  left: 0;
+  top: 17px;
+}
+
+.info__wrapper > button {
+  @include text(16px, 18px, 700);
+  margin-left: 94px;
+  background-color: $background_color;
+  color: $basic_white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  min-height: 55px;
+  min-width: 407px;
+}
+
+.info__wrapper > a {
+  @include text(14px, 16px, 400);
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  text-decoration: none;
+  color: $basic_white;
+  transform: rotate(-90deg);
+  opacity: 0.5;
+  font-family: PT Mono;
+  left: -20px;
+  // bottom: 92px;
+}

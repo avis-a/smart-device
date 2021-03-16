@@ -1,0 +1,17 @@
+.site-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.site-list__item {
+  padding-left: 88px
+}
+
+.site-list__link {
+  @include text(16px, 18px, 400);
+  font-family: "PT Mono";
+  text-decoration: none;
+  color: $basic_white;
+  padding-left: 15px;
+}

@@ -1,0 +1,18 @@
+.cite > h2 {
+  @include text(15px, 16px, 400);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $navy_blue;
+}
+
+.cite__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cite__link {
+  text-decoration: none;
+  opacity: 0.5;
+  color: $navy_blue;
+}

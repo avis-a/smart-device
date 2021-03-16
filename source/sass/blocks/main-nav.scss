@@ -1,0 +1,21 @@
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-nav__button {
+  @include text(14px, 16px, 700);
+  width: 180px;
+  height: 45px;
+  padding: 0;
+  color: $basic_white;
+  background-color: transparent;
+  border: 1px solid $basic_white;
+  border-radius: 5px;
+  font-family: Roboto Condensed;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-left: 38px;
+}

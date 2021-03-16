@@ -1,0 +1,82 @@
+.form {
+  color: $basic_white;
+  background-color: $basic_color;
+  font-family: "PT Mono";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form > h2 {
+  @include text(36px, 51px, 400);
+}
+
+.form > p {
+  @include text(16px, 22px, 400);
+}
+
+.form__container > button {
+  @include text(14px, 16px, 700);
+  background-color: transparent;
+  color: $basic_white;
+  border: 1px solid $basic_white;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  min-height: 45px;
+  min-width: 270px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form__row > input {
+  background-color: $background_color;
+  border: none;
+  width: 270px;
+  height: 50px;
+  padding-left: 17px;
+}
+
+.form__row > input::placeholder {
+  color: $basic_white;
+}
+
+.form__row--question > input {
+  width: 100%;
+  min-height: 154px;
+}
+
+.form__checkbox {
+  @include text(14px, 16px, 400);
+  opacity: 0.8;
+}
+
+.form__checkbox > input {
+  background-color: transparent;
+  border: 1px solid $basic_white;
+  width: 16px;
+  height: 16px;
+}
+
+.form::before {
+  background-image: url("../img/form-plane.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% auto;
+  @include pseudo($display: block, $pos: relative, $content: "");
+  width: 636px;
+  height: 636px;
+  left: 0;
+  top: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-plane-2x.png");
+  }
+}
