@@ -14,14 +14,32 @@
 }
 
 .info__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 71px;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // gap: 71px;
   align-items: center;
+}
+
+.info__container img {
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  right: 0;
+  top: 0;
+
+  @media (max-width: $desktop-width) {
+    width: 465px;
+    height: 340px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 301px;
+    height: 220px;
+  }
 }
 
 .info__wrapper {
   position: relative;
+  width: 50%;
+  margin-right: 50px;
 }
 
 .info__wrapper > h1 {
@@ -30,12 +48,28 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 31px;
+
+  @media (max-width: $desktop-width) {
+    @include text(60px, 70px, 700);
+  }
+
+  @media (max-width: $tablet-width) {
+    @include text(40px, 47px, 700);
+  }
 }
 
 .info__wrapper > p {
   @include text(22px, 34px, 400);
   position: relative;
   padding-left: 94px;
+
+  @media (max-width: $desktop-width) {
+    @include text(18px, 28px, 400);
+  }
+
+  @media (max-width: $tablet-width) {
+    @include text(16px, 25px, 400);
+  }
 }
 
 .info__wrapper > p::before {
@@ -59,6 +93,14 @@
   text-transform: uppercase;
   min-height: 55px;
   min-width: 407px;
+
+  @media (max-width: $desktop-width) {
+    min-width: 379px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 287px;
+  }
 }
 
 .info__wrapper > a {

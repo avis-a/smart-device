@@ -3,6 +3,15 @@
   color: $basic_white;
   padding-top: 93px;
   padding-bottom: 127px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 78px;
+    padding-top: 53px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 64px;
+  }
 }
 
 .types__wrapper > h2 {
@@ -13,12 +22,26 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 2%;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
-.types__item{
+.types__item {
   position: relative;
   display: block;
+  width: 32%;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 46px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .types__link {
@@ -36,21 +59,27 @@
 
 .types__link img {
   opacity: 0.2;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .types__link::before {
-  @include pseudo($display: inline-block, $pos: absolute, $content: "");
+  @include pseudo($display: block, $pos: absolute, $content: "");
   width: 63px;
   height: 63px;
+  z-index: 1;
   background-color: $basic_color;
   bottom: 4px;
-  right: 12px;
+  right: 0;
 }
 
 .types__link::after {
-  @include pseudo($display: inline-block, $pos: relative, $content: "");
-  bottom: 27px;
-  right: 39px;
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  bottom: 30px;
+  right: 27px;
+  z-index: 2;
   width: 7.4px;
   height: 7.4px;
   border-top: 1px solid $basic_white;

@@ -5,7 +5,22 @@
 }
 
 .site-list__item {
-  padding-left: 88px
+  padding-left: 88px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 34px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 24px;
+  }
+}
+
+.site-list__item svg {
+  @media (max-width: $desktop-width) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .site-list__link {
@@ -14,4 +29,8 @@
   text-decoration: none;
   color: $basic_white;
   padding-left: 15px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }

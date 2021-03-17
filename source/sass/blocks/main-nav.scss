@@ -18,4 +18,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-left: 38px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
