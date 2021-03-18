@@ -1,11 +1,14 @@
 .copyright {
-  border-top: 1px solid red;
+  border-top: 1px solid $border_color_footer;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .copyright__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .copyright__item {

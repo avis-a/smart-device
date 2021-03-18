@@ -1,11 +1,7 @@
 .form {
-  color: $basic_white;
-  background-color: $basic_color;
-  font-family: "PT Mono";
   position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form > h2 {
@@ -20,7 +16,7 @@
   padding-left: 110px;
 }
 
-.form__container > button {
+.form__footer > button {
   @include text(14px, 16px, 700);
   background-color: transparent;
   color: $basic_white;
@@ -30,20 +26,23 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   min-height: 45px;
-  min-width: 270px;
+  width: 270px;
+  margin-right: 38px;
 }
 
 .form__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    "name tel"
+    "ques ques";
   gap: 30px;
+  padding-bottom: 43px;
 }
 
 .form__row > input {
   background-color: $background_color;
   border: none;
-  // width: 270px;
+  // width: 50%;
   height: 50px;
   padding-left: 17px;
 }
@@ -54,6 +53,21 @@
 
 .form__row--question > input {
   min-height: 154px;
+  // width: 100%;
+  grid-area: ques;
+}
+
+.form__row--name > input {
+  grid-area: name;
+}
+
+.form__row--tel > input {
+  grid-area: tel;
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: row;
 }
 
 .form__checkbox {

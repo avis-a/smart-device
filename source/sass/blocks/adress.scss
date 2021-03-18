@@ -1,3 +1,7 @@
+.adress {
+  padding-left: 7.3%;
+}
+
 .adress > h2 {
   @include text(15px, 16px, 400);
   letter-spacing: 0.05em;
