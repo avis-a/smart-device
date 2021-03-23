@@ -1,19 +1,19 @@
 .form {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.form > h2 {
-  @include text(36px, 51px, 400);
-}
-
-.form > p {
-  @include text(16px, 22px, 400);
+  display: flex;
+  flex-direction: row;
 }
 
 .form__container {
-  padding-left: 110px;
+  padding-top: 61px;
+}
+
+.form__container > h2 {
+  @include text(36px, 51px, 400);
+}
+
+.form__container > p {
+  @include text(16px, 22px, 400);
 }
 
 .form__footer > button {
@@ -31,10 +31,10 @@
 }
 
 .form__wrapper {
-  display: grid;
-  grid-template-areas:
-    "name tel"
-    "ques ques";
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 43px;
 }
@@ -88,10 +88,10 @@
   background-position: center 0;
   background-size: 100% auto;
   @include pseudo($display: block, $pos: relative, $content: "");
-  width: 636px;
-  height: 636px;
-  left: 0;
-  top: 0;
+  width: 686px;
+  height: 639px;
+  right: 200px;
+  top: -59px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/form-plane-2x.png");

@@ -13,11 +13,11 @@
   background-color: transparent;
   border: 1px solid $basic_white;
   border-radius: 5px;
-  font-family: Roboto Condensed;
+  font-family: $caption-font;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-left: 38px;
+  margin-left: 50px;
 
   @media (max-width: $desktop-width) {
     display: none;

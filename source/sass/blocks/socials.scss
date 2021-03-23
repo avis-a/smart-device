@@ -1,11 +1,12 @@
 .socials {
-  padding-right: 10%;
+  padding-top: 14px;
 }
 
 .socials__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 46px;
 }
 
 .socials__item:not(:first-child) {

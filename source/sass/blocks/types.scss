@@ -1,8 +1,8 @@
 .types {
   background-color: $navy_blue;
   color: $basic_white;
-  padding-top: 93px;
-  padding-bottom: 127px;
+  padding-top: 57px;
+  padding-bottom: 106px;
 
   @media (max-width: $desktop-width) {
     padding-bottom: 78px;
@@ -15,7 +15,8 @@
 }
 
 .types__wrapper > h2 {
-  @include text(36px, 52px, 400);
+  @include text(36px, 51px, 400);
+  margin-bottom: 54px;
 }
 
 .types__list {
@@ -51,9 +52,9 @@
 .types__link > p {
   @include pseudo($display: block, $pos: absolute, $content: "");
   @include text(20px, 30px, 400);
-  width: 180px;
+  width: 192px;
   color: $basic_white;
-  top: 53px;
+  top: 30px;
   left: 44px;
 }
 

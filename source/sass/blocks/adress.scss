@@ -1,5 +1,5 @@
 .adress {
-  padding-left: 7.3%;
+  padding-left: 38%;
 }
 
 .adress > h2 {
@@ -7,6 +7,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $navy_blue;
+  margin-bottom: 25px;
 }
 
 .adress > p {
@@ -15,8 +16,17 @@
   color: $navy_blue;
 }
 
+.adress__list {
+  margin-top: -9px;
+}
+
+.adress__item {
+  margin-bottom: 5px;
+}
+
 .adress__link {
   text-decoration: none;
   opacity: 0.5;
   color: $navy_blue;
+  font-family: $text-font;
 }

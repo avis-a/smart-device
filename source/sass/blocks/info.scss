@@ -1,12 +1,12 @@
 .info {
   color: $basic_white;
   padding-top: 15%;
-  padding-bottom: 15.3%;
+  padding-bottom: 14.3%;
   margin-top: -100px;
   background-image: url("../img/info-background.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: 100% auto;
+  background-size: 100% 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/info-background-2x.jpg");
@@ -14,40 +14,30 @@
 }
 
 .info__container {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // gap: 71px;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .info__container img {
   @include pseudo($display: block, $pos: absolute, $content: "");
-  right: 0;
-  top: 0;
-
-  @media (max-width: $desktop-width) {
-    width: 465px;
-    height: 340px;
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 301px;
-    height: 220px;
-  }
+  right: -5%;
+  top: -49%;
+  width: 50%;
+  height: auto;
 }
 
 .info__wrapper {
-  position: relative;
-  width: 50%;
-  margin-right: 50px;
+  width: 50.5%;
 }
 
 .info__wrapper > h1 {
-  @include text(80px, 94px, 700);
-  letter-spacing: 0.07em;
+  @include text(73px, 94px, 700);
+  font-family: $caption-font;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 31px;
+  margin-top: 39px;
+  margin-bottom: 25px;
 
   @media (max-width: $desktop-width) {
     @include text(60px, 70px, 700);
@@ -62,6 +52,7 @@
   @include text(22px, 34px, 400);
   position: relative;
   padding-left: 94px;
+  margin-bottom: 44px;
 
   @media (max-width: $desktop-width) {
     @include text(18px, 28px, 400);
@@ -83,6 +74,7 @@
 
 .info__wrapper > button {
   @include text(16px, 18px, 700);
+  font-family: $caption-font;
   margin-left: 94px;
   background-color: $background_color;
   color: $basic_white;
@@ -110,7 +102,6 @@
   color: $basic_white;
   transform: rotate(-90deg);
   opacity: 0.5;
-  font-family: PT Mono;
-  left: -20px;
-  // bottom: 92px;
+  left: -2.4%;;
+  top: 141%;
 }

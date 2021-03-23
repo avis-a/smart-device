@@ -7,20 +7,15 @@
   <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>HTML Academy: Smart Device</title>
   <link href="css/style.min.css" type="text/css" rel="stylesheet">
-  <link rel="preload" href="./fonts/ptmono-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/ptmono-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/robotocondensed-regular-webfont.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="./fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="./fonts/robotocondensed-regular-webfont.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
-  <link rel="preload" href="./fonts/robotocondensed-bold-webfont.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
-  <link rel="preload" href="./fonts/robotocondensed-bold-webfont.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="./fonts/robotocondensed-bold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
 </head>
 
 <body class="page">
-  <header class="page__header container">
+  <header class="page__header container-max">
     <a class="page__logo">
       <svg width="202" height="52">
         <use xlink:href="img/sprite.svg#logo"></use>
@@ -49,7 +44,7 @@
 
   <main class="page__main">
     <section class="info">
-      <div class="info__container container">
+      <div class="info__container container-max">
         <div class="info__wrapper">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
@@ -93,7 +88,6 @@
         </li>
       </ul>
       <div class="about__wrapper">
-        <div class="about__img">
           <picture>
             <source type="image/webp" media="(max-width: 1023px)"
               srcset="./img/year-tablet.webp, ./img/year-tablet-2x.webp 2x">
@@ -101,7 +95,6 @@
             <!-- 1x: 342px; 2x: 684px -->
             <img width="220" height="317" src="./img/year-desktop.png" srcset="./img/year-desktop-2x.png 2x" alt="2005">
           </picture>
-        </div>
         <div class="about__text">
           <h2>О компании</h2>
           <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
@@ -205,7 +198,7 @@
   </main>
 
   <footer class="page__footer">
-    <div class="contacts container" id="contacts">
+    <div class="contacts container-max" id="contacts">
       <div class="socials">
         <a class="socials__logo">
           <svg width="216" height="52">
@@ -296,7 +289,7 @@
       </div>
     </div>
     <div class="copyright">
-      <ul class="copyright__list container">
+      <ul class="copyright__list container-max">
         <li class="copyright__item">Все права защищены</li>
         <li class="copyright__item">1999-2018 SD Service Devices</li>
         <li class="copyright__item">Условия конфиденциальности</li>

@@ -3,6 +3,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $navy_blue;
+  margin-bottom: 30px;
 }
 
 .cite__list {
@@ -10,11 +11,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   column-gap: 65px;
-  // height: 88px;
+  height: 88px;
+}
+
+.cite__item {
+  padding-bottom: 4px;
 }
 
 .cite__link {
   text-decoration: none;
   opacity: 0.5;
   color: $navy_blue;
+  font-family: $text-font;
 }
