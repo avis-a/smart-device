@@ -29,12 +29,12 @@
 }
 
 .info__wrapper {
-  width: 50.5%;
+  width: 51.5%;
 }
 
 .info__wrapper > h1 {
-  @include text(73px, 94px, 700);
-  font-family: $caption-font;
+  @include text(80px, 94px, 700);
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   margin-top: 39px;
   margin-bottom: 25px;

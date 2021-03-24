@@ -97,8 +97,8 @@
 }
 
 .about__wrapper img {
-  width: 220px;
-  height: 317px;
+  max-width: 220px;
+  height: auto;
 
   @media (max-width: $tablet-width) {
     height: 252px;
@@ -134,4 +134,5 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-top: 28px;
 }
