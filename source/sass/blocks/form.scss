@@ -1,26 +1,49 @@
 .form {
   position: relative;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form img {
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  left: -200px;
+  top: -59px;
+  width: auto;
+  height: auto;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .form__container {
   padding-top: 64px;
+  margin-left: auto;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 53px;
+    margin: 0 auto;
+  }
 }
 
 .form__container > h2 {
   @include text(36px, 51px, 400);
-  margin-bottom: 0
+  margin-bottom: 0;
+
+  @media (max-width: $desktop-width) {
+    @include text(32px, 45px, 400);
+  }
 }
 
 .form__container > p {
   @include text(16px, 22px, 400);
   margin-top: 7px;
   margin-bottom: 52px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 16px;
+  }
 }
 
 .form__wrapper {
@@ -32,6 +55,11 @@
   grid-column-gap: 30px;
   grid-row-gap: 40px;
   padding-bottom: 43px;
+
+  @media (max-width: $desktop-width) {
+    grid-column-gap: 32px;
+    grid-row-gap: 42px;
+  }
 }
 
 .form__row > input {

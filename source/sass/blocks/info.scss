@@ -7,9 +7,15 @@
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 100% 100%;
+  background-color: $navy_blue;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/info-background-2x.jpg");
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-top: 22.5%;
+    padding-bottom: 21.3%;
   }
 }
 
@@ -22,14 +28,25 @@
 
 .info__container img {
   @include pseudo($display: block, $pos: absolute, $content: "");
-  right: -5%;
-  top: -49%;
+  right: -72px;
+  top: -160px;
   width: 50%;
   height: auto;
+
+  @media (max-width: $desktop-width) {
+    right: -2px;
+    top: -150px;
+    width: auto;
+  }
 }
 
 .info__wrapper {
   width: 51.5%;
+
+  @media (max-width: $desktop-width) {
+    width: 69.5%;
+    padding-left: 63px;
+  }
 }
 
 .info__wrapper > h1 {
@@ -41,6 +58,7 @@
 
   @media (max-width: $desktop-width) {
     @include text(60px, 70px, 700);
+    margin-bottom: 27px;
   }
 
   @media (max-width: $tablet-width) {
@@ -56,6 +74,8 @@
 
   @media (max-width: $desktop-width) {
     @include text(18px, 28px, 400);
+    padding-left: 51px;
+    margin-bottom: 56px;
   }
 
   @media (max-width: $tablet-width) {
@@ -70,6 +90,10 @@
   background-color: $basic_white;
   left: 0;
   top: 17px;
+
+  @media (max-width: $desktop-width) {
+    width: 33px;
+  }
 }
 
 .info__wrapper > button {
@@ -88,6 +112,7 @@
 
   @media (max-width: $desktop-width) {
     min-width: 379px;
+    margin-left: 51px;
   }
 
   @media (max-width: $tablet-width) {
@@ -102,6 +127,10 @@
   color: $basic_white;
   transform: rotate(-90deg);
   opacity: 0.5;
-  left: -2.4%;;
-  top: 141%;
+  left: -34px;
+  top: 456px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }

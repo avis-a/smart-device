@@ -5,8 +5,8 @@
   padding-bottom: 106px;
 
   @media (max-width: $desktop-width) {
-    padding-bottom: 78px;
-    padding-top: 53px;
+    padding-bottom: 1px;
+    padding-top: 23px;
   }
 
   @media (max-width: $tablet-width) {
@@ -17,6 +17,11 @@
 .types__wrapper > h2 {
   @include text(36px, 51px, 400);
   margin-bottom: 54px;
+
+  @media (max-width: $desktop-width) {
+    @include text(32px, 45px, 400);
+    padding-right: 86px;
+  }
 }
 
 .types__list {
@@ -52,10 +57,16 @@
 .types__link > p {
   @include pseudo($display: block, $pos: absolute, $content: "");
   @include text(20px, 30px, 400);
-  width: 192px;
+  font-family: $caption-font;
+  width: 173px;
   color: $basic_white;
   top: 30px;
   left: 44px;
+
+  @media (max-width: $desktop-width) {
+    top: 13px;
+    width: 172px;
+  }
 }
 
 .types__link img {
@@ -63,6 +74,7 @@
 
   @media (max-width: $desktop-width) {
     width: 100%;
+    max-height: 256px;
   }
 }
 

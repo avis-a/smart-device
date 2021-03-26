@@ -1,5 +1,14 @@
 .adress {
-  padding-left: 38%;
+  padding-left: 15%;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 18px;
+    grid-area: adress;
+  }
+}
+
+.adress.container-max {
+  margin: 0;
 }
 
 .adress > h2 {
@@ -8,6 +17,10 @@
   text-transform: uppercase;
   color: $navy_blue;
   margin-bottom: 25px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 39px;
+  }
 }
 
 .adress > p {

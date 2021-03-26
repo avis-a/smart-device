@@ -1,9 +1,23 @@
+.cite {
+  grid-area: cite;
+}
+
+.cite.container-max {
+  @media (max-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .cite > h2 {
   @include text(15px, 16px, 400);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $navy_blue;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 39px;
+  }
 }
 
 .cite__list {
@@ -11,14 +25,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   column-gap: 65px;
-  height: 88px;
-}
+  height: 100px;
 
-.cite__item {
-  padding-bottom: 4px;
+  @media (max-width: $desktop-width) {
+    height: auto;
+  }
 }
 
 .cite__link {
+  @include text(15px, 25px, 400);
   text-decoration: none;
   opacity: 0.5;
   color: $navy_blue;

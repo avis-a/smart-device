@@ -1,5 +1,18 @@
 .contacts {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding-bottom: 51px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+
+  @media (max-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "socials socials"
+      "cite adress";
+    padding-bottom: 19px;
+    position: relative;
+  }
 }

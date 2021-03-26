@@ -14,6 +14,10 @@
   align-items: center;
   padding-top: 34px;
   position: relative;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .page__logo svg {
@@ -36,4 +40,8 @@
 
 .page__footer {
   padding-top: 48px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 6px;
+  }
 }

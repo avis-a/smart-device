@@ -3,6 +3,7 @@
 @import "./mixins";
 @import "./fonts";
 @import "./global";
+@import "blocks/container";
 @import "blocks/page";
 @import "blocks/contacts";
 @import "blocks/info";
@@ -16,4 +17,3 @@
 @import "blocks/cite";
 @import "blocks/copyright";
 @import "blocks/feedback";
-@import "blocks/container";
