@@ -5,6 +5,11 @@
   @media (max-width: $desktop-width) {
     padding-bottom: 84px;
   }
+
+  @media (max-width: $desktop-width) {
+    padding-top: 7%;
+    padding-bottom: 65px;
+  }
 }
 
 .about__list {
@@ -40,6 +45,15 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    padding-left: 24px;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.about__item--stopwatch {
+  @media (max-width: $tablet-width) {
+    padding-right: 19px;
   }
 }
 
@@ -47,6 +61,16 @@
 .about__item--detective {
   @media (max-width: $desktop-width) {
     padding-bottom: 19px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.about__item--price {
+  @media (max-width: $tablet-width) {
+    padding-bottom: 5px;
   }
 }
 
@@ -96,6 +120,11 @@
     margin-top: 30px;
     margin-bottom: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    @include text(20px, 28px, 400);
+    margin-top: 34px;
+  }
 }
 
 .about__item > p {
@@ -110,6 +139,13 @@
 .about__item--detective > p {
   @media (max-width: $desktop-width) {
     margin-top: 15px;
+  }
+}
+
+.about__item--price > p {
+  @media (max-width: $tablet-width) {
+    margin-top: 15px;
+    padding-right: 14px;
   }
 }
 
@@ -133,6 +169,10 @@
   flex-direction: row;
   align-items: center;
   padding-top: 10px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 14px;
+  }
 }
 
 .about__wrapper img {
@@ -158,6 +198,10 @@
   @media (max-width: $desktop-width) {
     left: -35px;
   }
+
+  @media (max-width: $tablet-width) {
+    left: 0;
+  }
 }
 
 .about__text > h2 {
@@ -167,8 +211,13 @@
   margin-bottom: 19px;
 
   @media (max-width: $desktop-width) {
+    @include text(32px, 45px, 400);
     margin-bottom: 22px;
     margin-top: -10px;
+  }
+
+  @media (max-width: $tablet-width) {
+    @include text(28px, 39px, 400);
   }
 }
 
@@ -178,12 +227,15 @@
   margin-bottom: 20px;
 
   @media (max-width: $desktop-width) {
-    padding-right: 8px;
     margin-bottom: 22px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 38px;
   }
 }
 
-.about__text:last-child > p {
+.about__text > p:nth-child(3) {
   @media (max-width: $desktop-width) {
     height: 86px;
     overflow: hidden;
@@ -191,6 +243,10 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 170px;
   }
 }
 
@@ -208,4 +264,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-top: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: -3px;
+  }
 }

@@ -6,6 +6,10 @@
     grid-area: socials;
     border-bottom: 1px solid $light_grey;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 39px;
+  }
 }
 
 .socials.container-max {
@@ -20,6 +24,16 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.socials__logo {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 78px;
   }
 }
 

@@ -2,4 +2,12 @@
   color: $basic_white;
   background-color: $basic_color;
   padding-bottom: 115px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 105px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 42px;
+  }
 }

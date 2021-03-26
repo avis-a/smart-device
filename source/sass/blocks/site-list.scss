@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 23px;
+  }
 }
 
 .site-list__item {
