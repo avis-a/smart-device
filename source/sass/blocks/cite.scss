@@ -1,14 +1,24 @@
 .cite {
   grid-area: cite;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $border_color_footer;
+  }
 }
 
-.cite.container-max {
+.cite__container {
+  @media (max-width: $tablet-width) {
+  position: relative;
+  }
+}
+
+.cite__container.container-max {
   @media (max-width: $desktop-width) {
     margin: 0;
   }
 }
 
-.cite > h2 {
+.cite__container > h2 {
   @include text(15px, 16px, 400);
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -17,6 +27,41 @@
 
   @media (max-width: $desktop-width) {
     margin-top: 39px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 29px;
+  }
+}
+
+.cite__button {
+  @media (max-width: $tablet-width) {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    top: 0;
+    right: 17px;
+  }
+}
+
+.cite__button::before,
+.cite__button::after {
+  @media (max-width: $tablet-width) {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    width: 16px;
+    height: 1px;
+    top: 7px;
+    right: 0;
+    background-color: $border_color_footer;
+  }
+}
+
+.cite__button::after {
+  @media (max-width: $tablet-width) {
+    transform: rotate(-90deg);
   }
 }
 

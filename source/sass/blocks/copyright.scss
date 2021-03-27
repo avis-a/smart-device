@@ -7,6 +7,10 @@
   @media (max-width: $desktop-width) {
     padding-top: 21px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 27px;
+  }
 }
 
 .copyright__list {
@@ -17,15 +21,23 @@
   @media (max-width: $desktop-width) {
     justify-content: space-between;
   }
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .copyright__item {
   @include text(13px, 24px, 400);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $navy_blue;
   opacity: 0.5;
   font-family: $text-font;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .copyright__item:first-child {
@@ -42,6 +54,12 @@
     top: -351px;
     right: 27%;
     padding-left: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: -629px;
+    right: 14%;
   }
 }
 

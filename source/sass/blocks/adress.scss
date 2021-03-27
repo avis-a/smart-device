@@ -5,6 +5,11 @@
     padding-left: 18px;
     grid-area: adress;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 18px;
+  }
 }
 
 .adress.container-max {
@@ -21,6 +26,11 @@
   @media (max-width: $desktop-width) {
     margin-top: 39px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
 }
 
 .adress > p {
@@ -31,6 +41,10 @@
 
 .adress__list {
   margin-top: -9px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: -12px;
+  }
 }
 
 .adress__item {
