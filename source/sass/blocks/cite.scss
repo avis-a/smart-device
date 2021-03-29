@@ -35,6 +35,8 @@
 }
 
 .cite__button {
+  display: none;
+
   @media (max-width: $tablet-width) {
     @include pseudo($display: block, $pos: absolute, $content: "");
     height: 16px;
@@ -44,6 +46,12 @@
     border: 0;
     top: 0;
     right: 17px;
+  }
+}
+
+.cite__button--nojs.cite__button {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -59,7 +67,7 @@
   }
 }
 
-.cite__button::after {
+.cite__button--closed.cite__button::after {
   @media (max-width: $tablet-width) {
     transform: rotate(-90deg);
   }
@@ -74,6 +82,12 @@
 
   @media (max-width: $desktop-width) {
     height: auto;
+  }
+}
+
+.cite__button--closed + .cite__list {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
