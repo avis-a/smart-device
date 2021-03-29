@@ -8,6 +8,7 @@
   var submitButton = document.querySelector('.form__button');
 
   var mainNavButton = document.querySelector('.main-nav__button');
+  var modalForm = document.querySelector('.modal');
   var modalButtonClose = document.querySelector('.modal__button--close');
   var modalOverlay = document.querySelector('.modal__overlay');
 
@@ -31,36 +32,34 @@
   });
 
   // модальное окно
-  const closeModal = () => {
-    modalOverlay.classList.add('hidden');
-    document.querySelector('body').classList.remove('modal-open');
+  mainNavButton.addEventListener('click', function (evt) {
+    modalForm.classList.remove('visually-hidden');
+    document.getElementById('modal-name').focus();
+    document.addEventListener(`keydown`, escPress);
+    modalButtonClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+  });
 
+  const closeModal = () => {
+    modalForm.classList.add('visually-hidden');
     modalButtonClose.removeEventListener('click', closeModal);
-    document.removeEventListener('keydown', escPress);
+    modalOverlay.removeEventListener('click', closeModal);
+    document.removeEventListener(`keydown`, escPress);
   };
 
   const escPress = (evt) => {
-    if (evt.key === 'Escape' && document.activeElement !== hashtagInput && document.activeElement !== commentTextarea) {
+    if (evt.key === `Escape`) {
       evt.preventDefault();
       closeModal();
     }
   };
 
-  mainNavButton.addEventListener('change', () => {
-    modalOverlay.classList.remove('hidden');
-
-    resetForm();
-
-    document.querySelector('body').classList.add('modal-open');
-    modalButtonClose.addEventListener('click', closeModal);
-    document.addEventListener('keydown', escPress);
-  });
-
   // маска поля телефон
-  var phoneMask = IMask(
-    document.getElementById('tel'), {
-      mask: '+{7}(000)000-00-00'
-    });
+  var maskConf = {
+    mask: '+{7}(000)000-00-00'
+  };
+  IMask(document.getElementById('tel'), maskConf);
+  IMask(document.getElementById('modal-tel'), maskConf);
 
   // валидация формы
   if (searchForm) {
