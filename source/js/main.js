@@ -18,7 +18,7 @@
   var modalQuestion = document.getElementById('modal-question');
 
   // аккордеон
-  closeButtons.forEach(function (closeButton){
+  closeButtons.forEach(function (closeButton) {
     if (closeButton) {
       closeButton.classList.remove('close-button--opened');
       closeButton.classList.add('close-button--closed');
@@ -37,17 +37,17 @@
   });
 
   // модальное окно
-  mainNavButton.addEventListener('click', function (evt) {
+  mainNavButton.addEventListener('click', function () {
     modalForm.classList.remove('visually-hidden');
     document.getElementById('modal-name').focus();
 
-    document.addEventListener(`keydown`, escPress);
+    document.addEventListener('keydown', escPress);
     modalButtonClose.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', closeModal);
 
-    let localItem = localStorage.getItem('modal-form-data');
-    if(localItem) {
-      let localData = JSON.parse(localItem);
+    var localItem = localStorage.getItem('modal-form-data');
+    if (localItem) {
+      var localData = JSON.parse(localItem);
 
       modalName.value = localData.name;
       modalTel.value = localData.tel;
@@ -55,23 +55,23 @@
     }
   });
 
-  const closeModal = () => {
+  var closeModal = function () {
     modalForm.classList.add('visually-hidden');
 
     modalButtonClose.removeEventListener('click', closeModal);
     modalOverlay.removeEventListener('click', closeModal);
-    document.removeEventListener(`keydown`, escPress);
+    document.removeEventListener('keydown', escPress);
   };
 
-  const escPress = (evt) => {
-    if (evt.key === `Escape`) {
+  var escPress = function (evt) {
+    if (evt.key === 'Escape') {
       evt.preventDefault();
       closeModal();
     }
   };
 
-  const modalInputChange = () => {
-    let dataObj = {
+  var modalInputChange = function () {
+    var dataObj = {
       name: modalName.value,
       tel: modalTel.value,
       question: modalQuestion.value
@@ -84,14 +84,15 @@
   modalTel.addEventListener('change', modalInputChange);
   modalQuestion.addEventListener('change', modalInputChange);
 
-  modalF.addEventListener('submit', () => {
+  modalF.addEventListener('submit', function () {
     localStorage.removeItem('modal-form-data');
   });
 
   // маска поля телефон
-  const maskConf = {
+  var maskConf = {
     mask: '+{7}(000)000-00-00'
   };
+
   IMask(document.getElementById('tel'), maskConf);
   IMask(document.getElementById('modal-tel'), maskConf);
 
