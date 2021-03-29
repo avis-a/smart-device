@@ -173,7 +173,7 @@
             </p>
           </div>
           <div class="form__footer">
-            <button type="submit" class="form__button button" aria-label="Задать вопрос">Задать вопрос</button>
+            <button type="submit" class="form__button" aria-label="Задать вопрос">Задать вопрос</button>
             <div class="form__checkbox">
               <input class="visually-hidden" id="consent" type="checkbox" name="consent" value="Согласие на обработку персональных данных" checked="">
               <label for="consent">Я согласен на обработку персональных данных</label>
@@ -221,7 +221,7 @@
       <div class="cite">
         <div class="cite__container container-max">
           <h2>Разделы сайта</h2>
-          <button class="cite__button cite__button--nojs" type="button">
+          <button class="cite__button close-button close-button--nojs" type="button">
             <span class="visually-hidden">Открыть разделы сайта</span>
           </button>
           <ul class="cite__list">
@@ -265,6 +265,9 @@
       </div>
       <div class="adress container-max">
         <h2>Наш офис</h2>
+        <button class="adress__button close-button close-button--nojs" type="button">
+          <span class="visually-hidden">Открыть разделы сайта</span>
+        </button>
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
         <ul class="adress__list">
           <li class="adress__item adress__item--tel">
@@ -291,6 +294,38 @@
       </ul>
     </div>
   </footer>
+
+  <!-- Модальное окно -->
+  <template id="modal-form">
+    <section class="question container">
+      <form class="question__form form-footer" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="form-footer__container">
+          <button type="button" class="form-footer__button form-footer__button--close" aria-label="Закрыть"></button>
+          <h1>Закажите звонок</h1>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <div class="form-footer__wrapper">
+            <p class="form-footer__row form-footer__row--name">
+              <label class="form-footer__label visually-hidden" for="modal-name">Имя</label>
+              <input id="modal-name" type="text" name="modal-name" placeholder="Имя">
+            </p>
+            <p class="form-footer__row form-footer__row--tel">
+              <label class="form-footer__label visually-hidden" for="modal-tel">Телефон</label>
+              <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон">
+            </p>
+            <p class="form-footer__row form-footer__row--question">
+              <label class="form-footer__label visually-hidden" for="modal-question">Ваш вопрос</label>
+              <input id="modal-question" type="text" name="modal-question" placeholder="Ваш вопрос">
+            </p>
+          </div>
+          <button type="submit" class="form-footer__button form-footer__button--submit" aria-label="Отправить">Отправить</button>
+          <div class="form-footer__checkbox">
+            <input class="visually-hidden" id="modal-consent" type="checkbox" name="modal-consent" value="Согласие на обработку персональных данных" checked="">
+            <label for="modal-consent">Я согласен на обработку персональных данных</label>
+          </div>
+        </div>
+      </form>
+    </section>
+  </template>
 
   <script src="./js/main.js"></script>
 

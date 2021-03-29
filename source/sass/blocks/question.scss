@@ -1,0 +1,39 @@
+.question__form {
+  background-color: $basic_color;
+  color: $basic_white;
+  padding-top: 9px;
+  padding-bottom: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 490px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form-footer__button--close {
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  border: none;
+  width: 17px;
+  height: 17px;
+  top: 16px;
+  right: 25px;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    top: 9px;
+    right: -4px;
+    width: 22.75px;
+    height: 1px;
+    background-color: $basic_white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

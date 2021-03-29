@@ -2,22 +2,22 @@
 
 (function () {
 
-  var citeButton = document.querySelector('.cite__button');
+  var closeButton = document.querySelector('.close-button');
   // var searchForm = document.querySelector('.form');
   // var submitButton = document.querySelector('.form__button');
 
-  if (citeButton) {
-    citeButton.classList.remove('cite__button--opened');
-    citeButton.classList.add('cite__button--closed');
-    citeButton.classList.remove('cite__button--nojs');
+  if (closeButton) {
+    closeButton.classList.remove('close-button--opened');
+    closeButton.classList.add('close-button--closed');
+    closeButton.classList.remove('close-button--nojs');
 
-    citeButton.addEventListener('click', function () {
-      if (citeButton.classList.contains('cite__button--closed')) {
-        citeButton.classList.remove('cite__button--closed');
-        citeButton.classList.add('cite__button--opened');
+    closeButton.addEventListener('click', function () {
+      if (closeButton.classList.contains('close-button--closed')) {
+        closeButton.classList.remove('close-button--closed');
+        closeButton.classList.add('close-button--opened');
       } else {
-        citeButton.classList.add('cite__button--closed');
-        citeButton.classList.remove('cite__button--opened');
+        closeButton.classList.add('close-button--closed');
+        closeButton.classList.remove('close-button--opened');
       }
     });
   }

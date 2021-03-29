@@ -34,45 +34,6 @@
   }
 }
 
-.cite__button {
-  display: none;
-
-  @media (max-width: $tablet-width) {
-    @include pseudo($display: block, $pos: absolute, $content: "");
-    height: 16px;
-    width: 16px;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-    top: 0;
-    right: 17px;
-  }
-}
-
-.cite__button--nojs.cite__button {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.cite__button::before,
-.cite__button::after {
-  @media (max-width: $tablet-width) {
-    @include pseudo($display: block, $pos: absolute, $content: "");
-    width: 16px;
-    height: 1px;
-    top: 7px;
-    right: 0;
-    background-color: $border_color_footer;
-  }
-}
-
-.cite__button--closed.cite__button::after {
-  @media (max-width: $tablet-width) {
-    transform: rotate(-90deg);
-  }
-}
-
 .cite__list {
   display: flex;
   flex-direction: column;
@@ -82,12 +43,6 @@
 
   @media (max-width: $desktop-width) {
     height: auto;
-  }
-}
-
-.cite__button--closed + .cite__list {
-  @media (max-width: $tablet-width) {
-    display: none;
   }
 }
 

@@ -1,0 +1,86 @@
+.form-footer__container > h1 {
+  @include text(28px, 39px, 400);
+  margin-bottom: 13px;
+}
+
+.form-footer__container > p {
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.form-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 13px;
+}
+
+.form-footer__row > input {
+  background-color: $background_color;
+  border: none;
+  min-height: 50px;
+  padding-left: 22px;
+  width: 100%;
+}
+
+.form-footer__row > input::placeholder {
+  color: $basic_white;
+}
+
+.form-footer__row--question > input {
+  min-height: 104px;
+  padding-bottom: 59px;
+}
+
+.form-footer__button--submit {
+  @include text(14px, 16px, 700);
+  background-color: transparent;
+  color: $basic_white;
+  border: 1px solid $basic_white;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  min-height: 47px;
+  min-width: 100%;
+  margin-bottom: 35px;
+}
+
+.form-footer__checkbox {
+  @include text(14px, 16px, 400);
+  opacity: 0.8;
+  margin-left: 48px;
+  position: relative;
+  padding-right: 10px;
+}
+
+.form-footer__checkbox > input {
+  border: 0;
+}
+
+.form-footer__checkbox > label {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-footer__checkbox > label::before {
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  border: 1px solid $basic_white;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: -49px;
+  background-color: transparent;
+  outline: none;
+}
+
+.form-footer__checkbox > input:checked + label::after {
+  @include pseudo($display: block, $pos: absolute, $content: "");
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 2L3.5 5L8 0.5' stroke='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 6px;
+  top: 5px;
+  left: -44px;
+}

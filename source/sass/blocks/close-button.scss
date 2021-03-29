@@ -1,0 +1,50 @@
+.close-button {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    @include pseudo($display: block, $pos: absolute, $content: "");
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    top: 0;
+    right: 17px;
+
+    &::before,
+    &::after {
+      @include pseudo($display: block, $pos: absolute, $content: "");
+      width: 16px;
+      height: 1px;
+      top: 7px;
+      right: 0;
+      background-color: $border_color_footer;
+    }
+  }
+}
+
+.close-button--nojs.close-button {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.close-button--closed.close-button::after {
+  @media (max-width: $tablet-width) {
+    transform: rotate(-90deg);
+  }
+}
+
+.close-button--closed+.cite__list,
+.close-button--closed~p,
+.close-button--closed~ul {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.adress__button.close-button {
+  @media (max-width: $tablet-width) {
+    top: 29px;
+  }
+}
