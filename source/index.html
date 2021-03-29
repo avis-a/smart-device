@@ -311,30 +311,31 @@
   </footer>
 
   <!-- Модальное окно -->
-  <template id="modal-form">
-    <section class="question container">
-      <form class="question__form form-footer" action="https://echo.htmlacademy.ru/" method="POST">
-        <div class="form-footer__container">
-          <button type="button" class="form-footer__button form-footer__button--close" aria-label="Закрыть"></button>
+  <!-- <template id="modal-form"> -->
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="modal__container">
+          <button type="button" class="modal__button modal__button--close" aria-label="Закрыть"></button>
           <h1>Закажите звонок</h1>
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <div class="form-footer__wrapper">
-            <p class="form-footer__row form-footer__row--name">
-              <label class="form-footer__label visually-hidden" for="modal-name">Имя</label>
+          <div class="modal__wrapper">
+            <p class="modal__row modal__row--name">
+              <label class="modal__label visually-hidden" for="modal-name">Имя</label>
               <input id="modal-name" type="text" name="modal-name" placeholder="Имя">
             </p>
-            <p class="form-footer__row form-footer__row--tel">
-              <label class="form-footer__label visually-hidden" for="modal-tel">Телефон</label>
+            <p class="modal__row modal__row--tel">
+              <label class="modal__label visually-hidden" for="modal-tel">Телефон</label>
               <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон">
             </p>
-            <p class="form-footer__row form-footer__row--question">
-              <label class="form-footer__label visually-hidden" for="modal-question">Ваш вопрос</label>
+            <p class="modal__row modal__row--question">
+              <label class="modal__label visually-hidden" for="modal-question">Ваш вопрос</label>
               <input id="modal-question" type="text" name="modal-question" placeholder="Ваш вопрос">
             </p>
           </div>
-          <button type="submit" class="form-footer__button form-footer__button--submit"
+          <button type="submit" class="modal__button modal__button--submit"
             aria-label="Отправить">Отправить</button>
-          <div class="form-footer__checkbox">
+          <div class="modal__checkbox">
             <input class="visually-hidden" id="modal-consent" type="checkbox" name="modal-consent"
               value="Согласие на обработку персональных данных" checked>
             <label for="modal-consent">Я согласен на обработку персональных данных</label>
@@ -342,8 +343,9 @@
         </div>
       </form>
     </section>
-  </template>
+  <!-- </template> -->
 
+  <script src="https://unpkg.com/imask"></script>
   <script src="./js/main.js"></script>
 
 </body>

@@ -3,9 +3,15 @@
 (function () {
 
   var closeButtons = document.querySelectorAll('.close-button');
+
   var searchForm = document.querySelector('.form');
   var submitButton = document.querySelector('.form__button');
 
+  var mainNavButton = document.querySelector('.main-nav__button');
+  var modalButtonClose = document.querySelector('.modal__button--close');
+  var modalOverlay = document.querySelector('.modal__overlay');
+
+  // аккордеон
   closeButtons.forEach(function (closeButton){
     if (closeButton) {
       closeButton.classList.remove('close-button--opened');
@@ -24,12 +30,39 @@
     }
   });
 
+  // модальное окно
+  const closeModal = () => {
+    modalOverlay.classList.add('hidden');
+    document.querySelector('body').classList.remove('modal-open');
+
+    modalButtonClose.removeEventListener('click', closeModal);
+    document.removeEventListener('keydown', escPress);
+  };
+
+  const escPress = (evt) => {
+    if (evt.key === 'Escape' && document.activeElement !== hashtagInput && document.activeElement !== commentTextarea) {
+      evt.preventDefault();
+      closeModal();
+    }
+  };
+
+  mainNavButton.addEventListener('change', () => {
+    modalOverlay.classList.remove('hidden');
+
+    resetForm();
+
+    document.querySelector('body').classList.add('modal-open');
+    modalButtonClose.addEventListener('click', closeModal);
+    document.addEventListener('keydown', escPress);
+  });
+
+  // маска поля телефон
   var phoneMask = IMask(
     document.getElementById('tel'), {
       mask: '+{7}(000)000-00-00'
     });
 
-
+  // валидация формы
   if (searchForm) {
     submitButton.addEventListener('click', function (evt) {
 
