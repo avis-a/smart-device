@@ -121,10 +121,14 @@
   }
 }
 
-.info__wrapper > button {
+.info__wrapper > a:nth-child(3) {
   @include text(16px, 18px, 700);
+  display: block;
+  text-decoration: none;
   font-family: $caption-font;
   margin-left: 94px;
+  padding-top: 20px;
+  padding-bottom: 17px;
   background-color: $background_color;
   color: $basic_white;
   border: none;
@@ -133,20 +137,34 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   min-height: 55px;
-  min-width: 407px;
+  max-width: 407px;
 
   @media (max-width: $desktop-width) {
-    min-width: 379px;
+    max-width: 379px;
     margin-left: 51px;
   }
 
   @media (max-width: $tablet-width) {
-    min-width: 287px;
+    visibility: hidden;
     margin-left: 0;
+    padding: 0;
+
+    &::after {
+      @include pseudo($display: block, $pos: absolute, $content: "Бесплатная консультация");
+      visibility: visible;
+      width: 287px;
+      min-height: 55px;
+      border-radius: 5px;
+      padding-top: 20px;
+      padding-bottom: 17px;
+      margin-right: 0;
+      background-color: $background_color;
+      bottom: 0;
+    }
   }
 }
 
-.info__wrapper > a {
+.info__wrapper > a:last-child {
   @include text(14px, 16px, 400);
   @include pseudo($display: block, $pos: absolute, $content: "");
   text-decoration: none;

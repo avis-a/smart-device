@@ -1,5 +1,10 @@
 .cite {
   grid-area: cite;
+  padding-left: 14.5%;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 0;
+  }
 
   @media (max-width: $tablet-width) {
     border-bottom: 1px solid $border_color_footer;

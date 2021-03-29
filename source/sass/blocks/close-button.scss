@@ -35,9 +35,9 @@
   }
 }
 
-.close-button--closed+.cite__list,
-.close-button--closed~p,
-.close-button--closed~ul {
+.close-button--closed + .cite__list,
+.close-button--closed ~ p,
+.close-button--closed ~ ul {
   @media (max-width: $tablet-width) {
     display: none;
   }

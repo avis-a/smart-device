@@ -6,7 +6,7 @@
     padding-bottom: 84px;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     padding-top: 7%;
     padding-bottom: 65px;
   }
@@ -212,12 +212,13 @@
 
   @media (max-width: $desktop-width) {
     @include text(32px, 45px, 400);
-    margin-bottom: 22px;
+    margin-bottom: 26px;
     margin-top: -10px;
   }
 
   @media (max-width: $tablet-width) {
     @include text(28px, 39px, 400);
+    margin-bottom: 22px;
   }
 }
 

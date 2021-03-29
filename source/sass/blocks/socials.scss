@@ -47,6 +47,27 @@
   @media (max-width: $desktop-width) {
     margin-top: 0;
     margin-bottom: 0;
+    position: relative;
+  }
+}
+
+.socials__list::before {
+  @media (max-width: $desktop-width) {
+    @include pseudo($display: block, $pos: absolute, $content: "1999-2018 SD Service Devices");
+    @include text(13px, 24px, 400);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $navy_blue;
+    opacity: 0.5;
+    font-family: $text-font;
+    top: 3px;
+    right:  166.5%;
+    width: 233px;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: -55px;
+    right: -56.5%;
   }
 }
 
