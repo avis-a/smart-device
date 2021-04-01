@@ -48,7 +48,7 @@
   }
 }
 
-.copyright__item:nth-child(2) {
+.copyright__item:nth-child(2n) {
   padding-left: 5.2%;
 
   @media (max-width: $desktop-width) {

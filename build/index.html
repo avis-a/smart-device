@@ -21,7 +21,7 @@
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list list">
           <li class="site-list__item">
             <svg class="site-list__img site-list__img--mail" width="19" height="14">
               <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -61,7 +61,7 @@
 
     <section class="about container" id="about">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="about__list">
+      <ul class="about__list list">
         <li class="about__item about__item--stopwatch">
           <h3>Оперативные сроки</h3>
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
@@ -107,7 +107,7 @@
     <section class="types" id="types">
       <div class="types__wrapper container">
         <h2>Service Device предлагает следующие товары и услуги</h2>
-        <ul class="types__list">
+        <ul class="types__list list">
           <li class="types__item types__item--produce">
             <a class="types__link" href="#">
               <p>Производство печатных плат</p>
@@ -159,18 +159,18 @@
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="form__wrapper">
-            <p class="form__row form__row--name">
-              <label class="form__label visually-hidden" for="name">Имя</label>
+            <div class="form__row form__row--name">
+              <label class="visually-hidden" for="name">Имя</label>
               <input id="name" type="text" name="name" placeholder="Имя">
-            </p>
-            <p class="form__row form__row--tel">
-              <label class="form__label visually-hidden" for="tel">Телефон</label>
+            </div>
+            <div class="form__row form__row--tel">
+              <label class="visually-hidden" for="tel">Телефон</label>
               <input id="tel" type="tel" name="tel" placeholder="Телефон">
-            </p>
-            <p class="form__row form__row--question">
-              <label class="form__label visually-hidden" for="question">Ваш вопрос</label>
+            </div>
+            <div class="form__row form__row--question">
+              <label class="visually-hidden" for="question">Ваш вопрос</label>
               <input id="question" type="text" name="question" placeholder="Ваш вопрос">
-            </p>
+            </div>
           </div>
           <div class="form__footer">
             <button type="submit" class="form__button" aria-label="Задать вопрос">Задать вопрос</button>
@@ -193,7 +193,7 @@
               <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
-          <ul class="socials__list">
+          <ul class="socials__list list">
             <li class="socials__item">
               <a class="socials__link socials__link--fb" href="#" aria-label="Facebook">
                 <svg width="27" height="27">
@@ -224,7 +224,7 @@
           <button class="cite__button close-button close-button--nojs" type="button">
             <span class="visually-hidden">Открыть разделы сайта</span>
           </button>
-          <ul class="cite__list">
+          <ul class="cite__list list">
             <li class="cite__item">
               <a class="cite__link" href="#">
                 О компании
@@ -269,7 +269,7 @@
           <span class="visually-hidden">Открыть разделы сайта</span>
         </button>
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
-        <ul class="adress__list">
+        <ul class="adress__list list">
           <li class="adress__item adress__item--tel">
             <a class="adress__link adress__link--tel" href="tel:+74955894050">+7 (495) 589-40-50
             </a>
@@ -286,7 +286,7 @@
       </div>
     </div>
     <div class="copyright">
-      <ul class="copyright__list container-max">
+      <ul class="copyright__list container-max list">
         <li class="copyright__item">Все права защищены</li>
         <li class="copyright__item">1999-2018 SD Service Devices</li>
         <li class="copyright__item">Условия конфиденциальности</li>
@@ -304,18 +304,18 @@
           <h1>Закажите звонок</h1>
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <div class="modal__wrapper">
-            <p class="modal__row modal__row--name">
-              <label class="modal__label visually-hidden" for="modal-name">Имя</label>
+            <div class="modal__row modal__row--name">
+              <label class="visually-hidden" for="modal-name">Имя</label>
               <input id="modal-name" type="text" name="modal-name" placeholder="Имя">
-            </p>
-            <p class="modal__row modal__row--tel">
-              <label class="modal__label visually-hidden" for="modal-tel">Телефон</label>
+            </div>
+            <div class="modal__row modal__row--tel">
+              <label class="visually-hidden" for="modal-tel">Телефон</label>
               <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон">
-            </p>
-            <p class="modal__row modal__row--question">
-              <label class="modal__label visually-hidden" for="modal-question">Ваш вопрос</label>
+            </div>
+            <div class="modal__row modal__row--question">
+              <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
               <input id="modal-question" type="text" name="modal-question" placeholder="Ваш вопрос">
-            </p>
+            </div>
           </div>
           <button type="submit" class="modal__button modal__button--submit" aria-label="Отправить">Отправить</button>
           <div class="modal__checkbox">
@@ -326,7 +326,7 @@
       </form>
     </section>
 
-  <script src="https://unpkg.com/imask"></script>
+  <!-- <script src="https://unpkg.com/imask"></script> -->
   <script src="./js/main.js"></script>
 
 </body>

@@ -236,7 +236,7 @@
   }
 }
 
-.about__text > p:nth-child(3) {
+.about__text > p:nth-child(3n) {
   @media (max-width: $desktop-width) {
     height: 86px;
     overflow: hidden;

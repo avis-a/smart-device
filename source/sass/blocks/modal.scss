@@ -32,14 +32,15 @@
 
 .modal__container > p {
   padding-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
 }
 
 .modal__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 13px;
+  gap: 32px;
+  margin-bottom: 29px;
 }
 
 .modal__row > input {
