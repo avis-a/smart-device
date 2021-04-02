@@ -17,6 +17,35 @@
   var modalTel = document.getElementById('modal-tel');
   var modalQuestion = document.getElementById('modal-question');
 
+  var toggleAccordionButton = function (button, state) {
+    if (state) {
+      button.classList.remove('close-button--closed');
+      button.classList.add('close-button--opened');
+    } else {
+      button.classList.remove('close-button--opened');
+      button.classList.add('close-button--closed');
+    }
+  }
+
+  var isOpenAccordionButton = function (button) {
+    return button.classList.contains('close-button--opened');
+  }
+
+  var accordionButtonHandler = function (button, evt) {
+    closeButtons.forEach(function (closeButton) {
+      if (closeButton.id === evt.target.id) {
+        if (isOpenAccordionButton(closeButton)) {
+          toggleAccordionButton(closeButton, false);
+        } else {
+          toggleAccordionButton(closeButton, true);
+        }
+      }
+      else {
+        toggleAccordionButton(closeButton, false);
+      }
+    });
+  }
+
   // аккордеон
   closeButtons.forEach(function (closeButton) {
     if (closeButton) {
@@ -24,14 +53,8 @@
       closeButton.classList.add('close-button--closed');
       closeButton.classList.remove('close-button--nojs');
 
-      closeButton.addEventListener('click', function () {
-        if (closeButton.classList.contains('close-button--closed')) {
-          closeButton.classList.remove('close-button--closed');
-          closeButton.classList.add('close-button--opened');
-        } else {
-          closeButton.classList.add('close-button--closed');
-          closeButton.classList.remove('close-button--opened');
-        }
+      closeButton.addEventListener('click', function (evt) {
+        accordionButtonHandler(closeButton, evt);
       });
     }
   });
