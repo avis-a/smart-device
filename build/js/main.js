@@ -60,23 +60,25 @@
   });
 
   // модальное окно
-  mainNavButton.addEventListener('click', function () {
-    modalForm.classList.remove('visually-hidden');
-    document.getElementById('modal-name').focus();
+  if (mainNavButton) {
+    mainNavButton.addEventListener('click', function () {
+      modalForm.classList.remove('visually-hidden');
+      document.getElementById('modal-name').focus();
 
-    document.addEventListener('keydown', escPress);
-    modalButtonClose.addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', closeModal);
+      document.addEventListener('keydown', escPress);
+      modalButtonClose.addEventListener('click', closeModal);
+      modalOverlay.addEventListener('click', closeModal);
 
-    var localItem = localStorage.getItem('modal-form-data');
-    if (localItem) {
-      var localData = JSON.parse(localItem);
+      var localItem = localStorage.getItem('modal-form-data');
+      if (localItem) {
+        var localData = JSON.parse(localItem);
 
-      modalName.value = localData.name;
-      modalTel.value = localData.tel;
-      modalQuestion.value = localData.question;
-    }
-  });
+        modalName.value = localData.name;
+        modalTel.value = localData.tel;
+        modalQuestion.value = localData.question;
+      }
+    });
+  }
 
   var closeModal = function () {
     modalForm.classList.add('visually-hidden');
@@ -103,13 +105,15 @@
     localStorage['modal-form-data'] = JSON.stringify(dataObj);
   };
 
-  modalName.addEventListener('change', modalInputChange);
-  modalTel.addEventListener('change', modalInputChange);
-  modalQuestion.addEventListener('change', modalInputChange);
+  if (modalName) {
+    modalName.addEventListener('change', modalInputChange);
+    modalTel.addEventListener('change', modalInputChange);
+    modalQuestion.addEventListener('change', modalInputChange);
 
-  modalF.addEventListener('submit', function () {
-    localStorage.removeItem('modal-form-data');
-  });
+    modalF.addEventListener('submit', function () {
+      localStorage.removeItem('modal-form-data');
+    });
+  }
 
   // маска поля телефон
   var maskConf = {
