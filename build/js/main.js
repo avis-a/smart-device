@@ -17,6 +17,9 @@
   var modalTel = document.getElementById('modal-tel');
   var modalQuestion = document.getElementById('modal-question');
 
+  var tel = document.getElementById('tel');
+  var modalTel = document.getElementById('modal-tel');
+
   var toggleAccordionButton = function (button, state) {
     if (state) {
       button.classList.remove('close-button--closed');
@@ -120,8 +123,13 @@
     mask: '+{7}(000)000-00-00'
   };
 
-  IMask(document.getElementById('tel'), maskConf);
-  IMask(document.getElementById('modal-tel'), maskConf);
+  if (tel) {
+    IMask(tel, maskConf);
+  }
+
+  if (modalTel) {
+    IMask(modalTel, maskConf);
+  }
 
   // валидация формы
   if (searchForm) {

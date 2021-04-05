@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var concat = require('gulp-concat');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -100,6 +101,7 @@ gulp.task("libs", function (){
     // перечисляем библиотеки которые необходимы для работы
     "node_modules/imask/dist/imask.min.js",
   ])
+  .pipe(concat('vendor.js'))
   .pipe(gulp.dest("build/js"));
 });
 
