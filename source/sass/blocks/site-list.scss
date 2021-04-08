@@ -46,14 +46,36 @@
   @include pseudo($display: inline-block, $pos: relative, $content: "");
   vertical-align: middle;
   top: 0;
+
+  @media (max-width: $desktop-width) {
+    top: 3px;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 .site-list__img--mail {
   left: -136px;
   margin-right: 21px;
+
+  @media (max-width: $desktop-width) {
+    width: 25px;
+    height: 19px;
+    left: 2px;
+    margin: 0;
+  }
 }
 
 .site-list__img--tel {
   left: -206px;
   margin-right: -17px;
+
+  @media (max-width: $desktop-width) {
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    margin: 0;
+  }
 }

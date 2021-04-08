@@ -8,6 +8,7 @@
   background-position: center 0;
   background-size: 100% 100%;
   background-color: $navy_blue;
+  overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/info-background-2x.jpg");

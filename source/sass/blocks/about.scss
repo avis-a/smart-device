@@ -218,7 +218,7 @@
 .about__text > h2 {
   @include text(36px, 51px, 400);
   color: $medium_black;
-  margin-top: -19px;
+  margin-top: -26px;
   margin-bottom: 19px;
 
   @media (max-width: $desktop-width) {
@@ -262,11 +262,13 @@
   }
 }
 
-.about__text > button {
+.about__text > a {
   @include text(14px, 16px, 700);
+  display: block;
+  text-decoration: none;
   width: 180px;
   height: 45px;
-  padding: 0;
+  padding-top: 15px;
   color: $basic_color;
   background-color: transparent;
   border: 1px solid $basic_color;
@@ -275,7 +277,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 36px;
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
