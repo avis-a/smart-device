@@ -83,10 +83,16 @@
   }
 
   @media (max-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 31px;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+  grid-template-columns: 1fr;
+    grid-template-areas:
+    "name"
+    "tel"
+    "ques";
+    grid-column-gap: unset;
+    grid-row-gap: 31px;
     padding-bottom: 31px;
   }
 }
