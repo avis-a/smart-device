@@ -194,7 +194,7 @@
               <button type="submit" class="form__button button" aria-label="Задать вопрос">Задать вопрос</button>
               <div class="form__checkbox">
                 <input class="visually-hidden" id="consent" type="checkbox" name="consent"
-                  value="Согласие на обработку персональных данных" checked>
+                  value="Согласие на обработку персональных данных" checked required>
                 <label for="consent">Я согласен на обработку персональных данных</label>
               </div>
             </div>
@@ -320,28 +320,28 @@
     <div class="modal__overlay"></div>
     <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
       <div class="modal__container">
-        <button type="button" class="modal__button modal__button--close" aria-label="Закрыть"></button>
+        <button type="button" class="modal__button modal__button--close" aria-label="Закрыть" tabindex="6"></button>
         <h1>Закажите звонок</h1>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="modal__wrapper">
           <div class="modal__row modal__row--name">
             <label class="visually-hidden" for="modal-name">Имя</label>
-            <input id="modal-name" type="text" name="modal-name" placeholder="Имя">
+            <input id="modal-name" type="text" name="modal-name" placeholder="Имя" tabindex="1" required>
           </div>
           <div class="modal__row modal__row--tel">
             <label class="visually-hidden" for="modal-tel">Телефон</label>
-            <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон">
+            <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон" tabindex="2" required>
           </div>
           <div class="modal__row modal__row--question">
             <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
-            <input id="modal-question" type="text" name="modal-question" placeholder="Ваш вопрос">
+            <input id="modal-question" type="text" name="modal-question" placeholder="Ваш вопрос" tabindex="3" required>
           </div>
         </div>
         <button type="submit" class="modal__button modal__button--submit button"
-          aria-label="Отправить">Отправить</button>
+          aria-label="Отправить" tabindex="4">Отправить</button>
         <div class="modal__checkbox">
           <input class="visually-hidden" id="modal-consent" type="checkbox" name="modal-consent"
-            value="Согласие на обработку персональных данных" checked>
+            value="Согласие на обработку персональных данных" tabindex="5" checked required>
           <label for="modal-consent">Я согласен на обработку персональных данных</label>
         </div>
       </div>
