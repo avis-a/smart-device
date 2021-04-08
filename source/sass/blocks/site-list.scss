@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  row-gap: 10px;
   margin-top: 10px;
 
   @media (max-width: $tablet-width) {
@@ -10,7 +11,7 @@
 }
 
 .site-list__item:not(:first-child) {
-  padding-left: 81px;
+  padding-left: 0;
 
   @media (max-width: $desktop-width) {
     padding-left: 34px;
@@ -58,7 +59,7 @@
 
 .site-list__img--mail {
   left: -136px;
-  margin-right: 21px;
+  margin-right: 103px;
 
   @media (max-width: $desktop-width) {
     width: 25px;
@@ -70,7 +71,7 @@
 
 .site-list__img--tel {
   left: -206px;
-  margin-right: -17px;
+  margin-right: 32px;
 
   @media (max-width: $desktop-width) {
     width: 24px;

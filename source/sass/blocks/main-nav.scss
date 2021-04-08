@@ -1,7 +1,6 @@
 .main-nav__wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .main-nav__button {
@@ -17,7 +16,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-left: 50px;
+  // margin-left: 20px;
   cursor: pointer;
 
   @media (max-width: $desktop-width) {

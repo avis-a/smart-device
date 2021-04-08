@@ -15,14 +15,15 @@
 .page__header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 200px;
   align-items: center;
   padding-top: 34px;
   position: relative;
 
   @media (max-width: $desktop-width) {
     padding-top: 17px;
+    column-gap: unset;
 
     @media (max-width: $tablet-width) {
       padding-top: 0;
