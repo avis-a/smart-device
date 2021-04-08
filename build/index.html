@@ -13,178 +13,181 @@
 </head>
 
 <body class="page">
-  <header class="page__header container-max">
-    <a class="page__logo" href="#">
-      <svg width="202" height="52">
-        <use xlink:href="img/sprite.svg#logo"></use>
-      </svg>
-    </a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="mailto:info@sd.ru">info@sd.ru
-              <svg class="site-list__img site-list__img--mail" width="19" height="14">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-            </a>
+  <div class="page__wrapper">
+    <header class="page__header container-max">
+      <a class="page__logo" href="#">
+        <svg width="202" height="52">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="mailto:info@sd.ru">info@sd.ru
+                <svg class="site-list__img site-list__img--mail" width="19" height="14">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="tel:+74950005252">+7 (495) 000 52 52
+                <svg class="site-list__img site-list__img--tel" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-tel"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__button button" type="button">Заказать звонок</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <section class="info">
+        <div class="info__container container-max">
+          <div class="info__wrapper">
+            <h1>Печатные платы</h1>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a href="#feedback" class="button">Получить бесплатную консультацию</a>
+            <a href="#about">Скролл вниз</a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/main-pic-mobile.webp, ./img/main-pic-mobile-2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="./img/main-pic-tablet.webp, ./img/main-pic-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="./img/main-pic-desktop.webp, ./img/main-pic-desktop-2x.webp 2x">
+            <!-- 1x: 342px; 2x: 684px -->
+            <img width="705" height="515" src="./img/main-pic-desktop.png" srcset="./img/main-pic-desktop-2x.png 2x" alt="Печатная плата">
+          </picture>
+        </div>
+      </section>
+
+      <section class="about container" id="about">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="about__list list">
+          <li class="about__item about__item--stopwatch">
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+              заказы плат и комплектующих в самые короткие сроки.</p>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="tel:+74950005252">+7 (495) 000 52 52
-              <svg class="site-list__img site-list__img--tel" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-tel"></use>
-              </svg>
-            </a>
+          <li class="about__item about__item--providers">
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+          </li>
+          <li class="about__item about__item--detective">
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="about__item about__item--price">
+            <h3>Персонализация стоимости</h3>
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+              устраивает.</p>
           </li>
         </ul>
-        <button class="main-nav__button button" type="button">Заказать звонок</button>
-      </div>
-    </nav>
-  </header>
-
-  <main class="page__main">
-    <section class="info">
-      <div class="info__container container-max">
-        <div class="info__wrapper">
-          <h1>Печатные платы</h1>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#feedback" class="button">Получить бесплатную консультацию</a>
-          <a href="#about">Скролл вниз</a>
-        </div>
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="./img/main-pic-mobile.webp, ./img/main-pic-mobile-2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="./img/main-pic-tablet.webp, ./img/main-pic-tablet-2x.webp 2x">
-          <source type="image/webp" srcset="./img/main-pic-desktop.webp, ./img/main-pic-desktop-2x.webp 2x">
-          <!-- 1x: 342px; 2x: 684px -->
-          <img width="705" height="515" src="./img/main-pic-desktop.png" srcset="./img/main-pic-desktop-2x.png 2x" alt="Печатная плата">
-        </picture>
-      </div>
-    </section>
-
-    <section class="about container" id="about">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="about__list list">
-        <li class="about__item about__item--stopwatch">
-          <h3>Оперативные сроки</h3>
-          <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
-            заказы плат и комплектующих в самые короткие сроки.</p>
-        </li>
-        <li class="about__item about__item--providers">
-          <h3>Крупные поставщики</h3>
-          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-        </li>
-        <li class="about__item about__item--detective">
-          <h3>Полная конфиденциальность</h3>
-          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-        </li>
-        <li class="about__item about__item--price">
-          <h3>Персонализация стоимости</h3>
-          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
-            устраивает.</p>
-        </li>
-      </ul>
-      <div class="about__wrapper">
-        <picture>
-          <source type="image/webp" media="(max-width: 1023px)" srcset="./img/year-tablet.webp, ./img/year-tablet-2x.webp 2x">
-          <source type="image/webp" srcset="./img/year-desktop.webp, ./img/year-desktop-2x.webp 2x">
-          <!-- 1x: 342px; 2x: 684px -->
-          <img width="220" height="317" src="./img/year-desktop.png" srcset="./img/year-desktop-2x.png 2x" alt="2005">
-        </picture>
-        <div class="about__text">
-          <h2>О компании</h2>
-          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
-            1997
-            года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-            светотехники России.
-          </p>
-          <a class="button" href="#">Подробнее</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="types" id="types">
-      <div class="types__wrapper container">
-        <h2>Service Device предлагает следующие товары и услуги</h2>
-        <ul class="types__list list">
-          <li class="types__item types__item--produce">
-            <a class="types__link" href="#">
-              <p>Производство печатных плат</p>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/produce-mobile.webp, ./img/produce-mobile-2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/produce-tablet.webp, ./img/produce-tablet-2x.webp 2x">
-                <source type="image/webp" srcset="./img/produce-desktop.webp, ./img/produce-desktop-2x.webp 2x">
-                <!-- 1x: 342px; 2x: 684px -->
-                <img width="370" height="620" src="./img/produce-desktop.png" srcset="./img/produce-desktop-2x.png 2x" alt="Производство печатных плат">
-              </picture>
-            </a>
-          </li>
-          <li class="types__item types__item--edit">
-            <a class="types__link" href="#">
-              <p>Монтаж печатных плат</p>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/edit-mobile.webp, ./img/edit-mobile-2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/edit-tablet.webp, ./img/edit-tablet-2x.webp 2x">
-                <source type="image/webp" srcset="./img/edit-desktop.webp, ./img/edit-desktop-2x.webp 2x">
-                <!-- 1x: 342px; 2x: 684px -->
-                <img width="370" height="620" src="./img/edit-desktop.png" srcset="./img/edit-desktop-2x.png 2x" alt="Монтаж печатных плат">
-              </picture>
-            </a>
-          </li>
-          <li class="types__item types__item--lighting">
-            <a class="types__link" href="#">
-              <p>Комплектующие для светотехники</p>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/lighting-mobile.webp, ./img/lighting-mobile-2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/lighting-tablet.webp, ./img/lighting-tablet-2x.webp 2x">
-                <source type="image/webp" srcset="./img/lighting-desktop.webp, ./img/lighting-desktop-2x.webp 2x">
-                <!-- 1x: 342px; 2x: 684px -->
-                <img width="370" height="620" src="./img/lighting-desktop.png" srcset="./img/lighting-desktop-2x.png 2x" alt="Комплектующие для светотехники">
-              </picture>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="feedback" id="feedback">
-      <form class="feedback__form form container" action="https://echo.htmlacademy.ru/" method="POST">
-        <picture>
-          <source type="image/webp" srcset="./img/form-plane.webp, ./img/form-plane-2x.webp 2x">
-          <!-- 1x: 342px; 2x: 684px -->
-          <img width="686" height="641" src="./img/form-plane.png" srcset="./img/form-plane-2x.png 2x" alt="Обратная связь">
-        </picture>
-        <div class="form__container">
-          <h2>Остались вопросы? Задайте их нам!</h2>
-          <p>Мы проконсультируем Вас бесплатно</p>
-          <div class="form__wrapper">
-            <div class="form__row form__row--name">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input id="name" type="text" name="name" placeholder="Имя">
-            </div>
-            <div class="form__row form__row--tel">
-              <label class="visually-hidden" for="tel">Телефон</label>
-              <input id="tel" type="tel" name="tel" placeholder="Телефон">
-            </div>
-            <div class="form__row form__row--question">
-              <label class="visually-hidden" for="question">Ваш вопрос</label>
-              <input id="question" type="text" name="question" placeholder="Ваш вопрос">
-            </div>
-          </div>
-          <div class="form__footer">
-            <button type="submit" class="form__button button" aria-label="Задать вопрос">Задать вопрос</button>
-            <div class="form__checkbox">
-              <input class="visually-hidden" id="consent" type="checkbox" name="consent" value="Согласие на обработку персональных данных" checked="">
-              <label for="consent">Я согласен на обработку персональных данных</label>
-            </div>
+        <div class="about__wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="./img/year-tablet.webp, ./img/year-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="./img/year-desktop.webp, ./img/year-desktop-2x.webp 2x">
+            <!-- 1x: 342px; 2x: 684px -->
+            <img width="220" height="317" src="./img/year-desktop.png" srcset="./img/year-desktop-2x.png 2x" alt="2005">
+          </picture>
+          <div class="about__text">
+            <h2>О компании</h2>
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+              1997
+              года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+              (РЖД),
+              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+              светотехники России.
+            </p>
+            <a class="button" href="#">Подробнее</a>
           </div>
         </div>
-      </form>
-    </section>
-  </main>
+      </section>
+
+      <section class="types" id="types">
+        <div class="types__wrapper container">
+          <h2>Service Device предлагает следующие товары и услуги</h2>
+          <ul class="types__list list">
+            <li class="types__item types__item--produce">
+              <a class="types__link" href="#">
+                <p>Производство печатных плат</p>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/produce-mobile.webp, ./img/produce-mobile-2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/produce-tablet.webp, ./img/produce-tablet-2x.webp 2x">
+                  <source type="image/webp" srcset="./img/produce-desktop.webp, ./img/produce-desktop-2x.webp 2x">
+                  <!-- 1x: 342px; 2x: 684px -->
+                  <img width="370" height="620" src="./img/produce-desktop.png" srcset="./img/produce-desktop-2x.png 2x" alt="Производство печатных плат">
+                </picture>
+              </a>
+            </li>
+            <li class="types__item types__item--edit">
+              <a class="types__link" href="#">
+                <p>Монтаж печатных плат</p>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/edit-mobile.webp, ./img/edit-mobile-2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/edit-tablet.webp, ./img/edit-tablet-2x.webp 2x">
+                  <source type="image/webp" srcset="./img/edit-desktop.webp, ./img/edit-desktop-2x.webp 2x">
+                  <!-- 1x: 342px; 2x: 684px -->
+                  <img width="370" height="620" src="./img/edit-desktop.png" srcset="./img/edit-desktop-2x.png 2x" alt="Монтаж печатных плат">
+                </picture>
+              </a>
+            </li>
+            <li class="types__item types__item--lighting">
+              <a class="types__link" href="#">
+                <p>Комплектующие для светотехники</p>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/lighting-mobile.webp, ./img/lighting-mobile-2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/lighting-tablet.webp, ./img/lighting-tablet-2x.webp 2x">
+                  <source type="image/webp" srcset="./img/lighting-desktop.webp, ./img/lighting-desktop-2x.webp 2x">
+                  <!-- 1x: 342px; 2x: 684px -->
+                  <img width="370" height="620" src="./img/lighting-desktop.png" srcset="./img/lighting-desktop-2x.png 2x" alt="Комплектующие для светотехники">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="feedback" id="feedback">
+        <form class="feedback__form form container" action="https://echo.htmlacademy.ru/" method="POST">
+          <picture>
+            <source type="image/webp" srcset="./img/form-plane.webp, ./img/form-plane-2x.webp 2x">
+            <!-- 1x: 342px; 2x: 684px -->
+            <img width="686" height="641" src="./img/form-plane.png" srcset="./img/form-plane-2x.png 2x" alt="Обратная связь">
+          </picture>
+          <div class="form__container">
+            <h2>Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <div class="form__wrapper">
+              <div class="form__row form__row--name">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input id="name" type="text" name="name" placeholder="Имя">
+              </div>
+              <div class="form__row form__row--tel">
+                <label class="visually-hidden" for="tel">Телефон</label>
+                <input id="tel" type="tel" name="tel" placeholder="Телефон">
+              </div>
+              <div class="form__row form__row--question">
+                <label class="visually-hidden" for="question">Ваш вопрос</label>
+                <input id="question" type="text" name="question" placeholder="Ваш вопрос">
+              </div>
+            </div>
+            <div class="form__footer">
+              <button type="submit" class="form__button button" aria-label="Задать вопрос">Задать вопрос</button>
+              <div class="form__checkbox">
+                <input class="visually-hidden" id="consent" type="checkbox" name="consent" value="Согласие на обработку персональных данных" checked="">
+                <label for="consent">Я согласен на обработку персональных данных</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
 
   <footer class="page__footer">
     <div class="contacts" id="contacts">

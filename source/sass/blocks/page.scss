@@ -4,6 +4,12 @@
   color: $basic_black;
   background-color: $basic_white;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__wrapper {
+  flex: 1 0 auto;
 }
 
 .page__header {
@@ -52,6 +58,7 @@
 
 .page__footer {
   padding-top: 48px;
+  flex-shrink: 0;
 
   @media (max-width: $desktop-width) {
     padding-top: 6px;
