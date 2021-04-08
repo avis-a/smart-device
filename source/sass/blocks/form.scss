@@ -83,10 +83,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
     "name"
     "tel"
@@ -111,7 +108,6 @@
   color: $basic_white;
   border-radius: 0;
   -webkit-appearance: none;
-  background-color: yellow;
 }
 
 .form__row > input::placeholder {
