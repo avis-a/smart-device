@@ -1,5 +1,9 @@
 .adress {
-  padding-left: 28.3%;
+  padding-left: 15.7%;
+
+  @media (max-width: $pre-desktop-width) {
+    padding-left: 40%;
+  }
 
   @media (max-width: $desktop-width) {
     padding-left: 18px;
