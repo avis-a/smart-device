@@ -265,6 +265,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-top: 20px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     margin-top: -3px;

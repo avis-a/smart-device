@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1200px;
+  padding: 0 15px;
 
   @media (max-width: $desktop-width) {
     padding: 0 25px;
@@ -13,8 +14,9 @@
 }
 
 .container-max {
-  max-width: 1420px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 15px;
 
   @media (max-width: $desktop-width) {
     padding: 0 25px;

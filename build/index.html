@@ -14,7 +14,7 @@
 
 <body class="page">
   <header class="page__header container-max">
-    <a class="page__logo">
+    <a class="page__logo" href="#">
       <svg width="202" height="52">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
@@ -23,19 +23,21 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list list">
           <li class="site-list__item">
-            <svg class="site-list__img site-list__img--mail" width="19" height="14">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
-            </svg>
-            <a class="site-list__link" href="#mail">info@sd.ru</a>
+            <a class="site-list__link" href="#mail">info@sd.ru
+              <svg class="site-list__img site-list__img--mail" width="19" height="14">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </a>
           </li>
           <li class="site-list__item">
-            <svg class="site-list__img site-list__img--tel" width="18" height="18">
-              <use xlink:href="img/sprite.svg#icon-tel"></use>
-            </svg>
-            <a class="site-list__link" href="#phone">+7 (495) 000 52 52</a>
+            <a class="site-list__link" href="#phone">+7 (495) 000 52 52
+              <svg class="site-list__img site-list__img--tel" width="18" height="18">
+                <use xlink:href="img/sprite.svg#icon-tel"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-        <button class="main-nav__button" type="button">Заказать звонок</button>
+        <button class="main-nav__button button" type="button">Заказать звонок</button>
       </div>
     </nav>
   </header>
@@ -46,7 +48,7 @@
         <div class="info__wrapper">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#feedback">Получить бесплатную консультацию</a>
+          <a href="#feedback" class="button">Получить бесплатную консультацию</a>
           <a href="#about">Скролл вниз</a>
         </div>
         <picture>
@@ -99,7 +101,7 @@
             РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
             светотехники России.
           </p>
-          <button type="button">Подробнее</button>
+          <button class="button" type="button">Подробнее</button>
         </div>
       </div>
     </section>
@@ -173,7 +175,7 @@
             </div>
           </div>
           <div class="form__footer">
-            <button type="submit" class="form__button" aria-label="Задать вопрос">Задать вопрос</button>
+            <button type="submit" class="form__button button" aria-label="Задать вопрос">Задать вопрос</button>
             <div class="form__checkbox">
               <input class="visually-hidden" id="consent" type="checkbox" name="consent" value="Согласие на обработку персональных данных" checked="">
               <label for="consent">Я согласен на обработку персональных данных</label>
@@ -188,7 +190,7 @@
     <div class="contacts" id="contacts">
       <div class="socials container-max">
         <div class="socials__wrapper">
-          <a class="socials__logo">
+          <a class="socials__logo" href="#">
             <svg width="216" height="52">
               <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
@@ -296,35 +298,35 @@
   </footer>
 
   <!-- Модальное окно -->
-    <section class="modal visually-hidden">
-      <div class="modal__overlay"></div>
-      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
-        <div class="modal__container">
-          <button type="button" class="modal__button modal__button--close" aria-label="Закрыть"></button>
-          <h1>Закажите звонок</h1>
-          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <div class="modal__wrapper">
-            <div class="modal__row modal__row--name">
-              <label class="visually-hidden" for="modal-name">Имя</label>
-              <input id="modal-name" type="text" name="modal-name" placeholder="Имя">
-            </div>
-            <div class="modal__row modal__row--tel">
-              <label class="visually-hidden" for="modal-tel">Телефон</label>
-              <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон">
-            </div>
-            <div class="modal__row modal__row--question">
-              <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
-              <input id="modal-question" type="text" name="modal-question" placeholder="Ваш вопрос">
-            </div>
+  <section class="modal visually-hidden">
+    <div class="modal__overlay"></div>
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
+      <div class="modal__container">
+        <button type="button" class="modal__button modal__button--close" aria-label="Закрыть"></button>
+        <h1>Закажите звонок</h1>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <div class="modal__wrapper">
+          <div class="modal__row modal__row--name">
+            <label class="visually-hidden" for="modal-name">Имя</label>
+            <input id="modal-name" type="text" name="modal-name" placeholder="Имя">
           </div>
-          <button type="submit" class="modal__button modal__button--submit" aria-label="Отправить">Отправить</button>
-          <div class="modal__checkbox">
-            <input class="visually-hidden" id="modal-consent" type="checkbox" name="modal-consent" value="Согласие на обработку персональных данных" checked="">
-            <label for="modal-consent">Я согласен на обработку персональных данных</label>
+          <div class="modal__row modal__row--tel">
+            <label class="visually-hidden" for="modal-tel">Телефон</label>
+            <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон">
+          </div>
+          <div class="modal__row modal__row--question">
+            <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
+            <input id="modal-question" type="text" name="modal-question" placeholder="Ваш вопрос">
           </div>
         </div>
-      </form>
-    </section>
+        <button type="submit" class="modal__button modal__button--submit button" aria-label="Отправить">Отправить</button>
+        <div class="modal__checkbox">
+          <input class="visually-hidden" id="modal-consent" type="checkbox" name="modal-consent" value="Согласие на обработку персональных данных" checked="">
+          <label for="modal-consent">Я согласен на обработку персональных данных</label>
+        </div>
+      </div>
+    </form>
+  </section>
 
   <script src="./js/vendor.js"></script>
   <script src="./js/main.js"></script>

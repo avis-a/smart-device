@@ -73,6 +73,7 @@
   min-height: 47px;
   min-width: 100%;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .modal__checkbox {
@@ -118,11 +119,12 @@
 .modal__button--close {
   @include pseudo($display: block, $pos: absolute, $content: "");
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   top: 16px;
   right: 25px;
   background-color: transparent;
+  cursor: pointer;
 
   &::before,
   &::after {

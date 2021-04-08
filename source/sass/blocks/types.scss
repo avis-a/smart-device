@@ -37,6 +37,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2%;
+  row-gap: 20px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
