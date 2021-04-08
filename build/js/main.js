@@ -68,6 +68,7 @@
   if (mainNavButton) {
     mainNavButton.addEventListener('click', function () {
       modalForm.classList.remove('visually-hidden');
+      document.querySelector('body').classList.add('page__hidden');
       document.getElementById('modal-name').focus();
 
       document.addEventListener('keydown', escPress);
@@ -87,6 +88,7 @@
 
   var closeModal = function () {
     modalForm.classList.add('visually-hidden');
+    document.querySelector('body').classList.remove('page__hidden');
 
     modalButtonClose.removeEventListener('click', closeModal);
     modalOverlay.removeEventListener('click', closeModal);
