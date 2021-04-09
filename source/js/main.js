@@ -21,7 +21,7 @@
   var tel = document.getElementById('tel');
   var modalTel = document.getElementById('modal-tel');
 
-  mainNavButton.href="#";
+  mainNavButton.href='#';
 
   var toggleAccordionButton = function (button, state) {
     if (state) {
