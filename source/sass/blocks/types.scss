@@ -58,6 +58,10 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 30px;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .types__link {

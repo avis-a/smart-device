@@ -1,8 +1,8 @@
 .adress {
-  padding-left: 15.7%;
+  padding-left: 31.5%;
 
   @media (max-width: $pre-desktop-width) {
-    padding-left: 40%;
+    padding-left: 3%;
   }
 
   @media (max-width: $desktop-width) {
@@ -54,6 +54,11 @@
 
 .adress__item {
   margin-bottom: 5px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .adress__link {

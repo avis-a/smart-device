@@ -1,12 +1,9 @@
 .cite {
   grid-area: cite;
-  padding-left: 12%;
+  // padding-left: 12%;
 
   @media (max-width: $pre-desktop-width) {
-    padding-left: 0;
-    order: 3;
-    margin-left: auto;
-    margin-right: auto;
+    // padding-left: 5%;
   }
 
   @media (max-width: $desktop-width) {
@@ -53,12 +50,24 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(4, 1fr);
-  column-gap: 65px;
+  column-gap: 19px;
+
+  @media (max-width: $pre-desktop-width) {
+    column-gap: 5px;
+  }
 
   @media (max-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+
+.cite__item {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 

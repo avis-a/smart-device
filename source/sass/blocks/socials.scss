@@ -33,6 +33,12 @@
 }
 
 .socials__logo {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 78px;
   }
@@ -48,6 +54,14 @@
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
+  }
+}
+
+.socials__item {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
   }
 }
 

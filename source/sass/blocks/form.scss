@@ -108,6 +108,11 @@
   color: $basic_white;
   border-radius: 0;
   -webkit-appearance: none;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
 
 .form__row > input::placeholder {
@@ -188,6 +193,11 @@
 
   @media (max-width: $tablet-width) {
     margin-left: 9px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
   }
 }
 

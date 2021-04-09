@@ -31,14 +31,6 @@
   }
 }
 
-.page__logo {
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.5;
-  }
-}
-
 .page__logo svg {
   @media (max-width: $tablet-width) {
     display: none;
