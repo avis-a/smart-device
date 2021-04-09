@@ -3,6 +3,7 @@
 (function () {
 
   var closeButtons = document.querySelectorAll('.close-button');
+  var closeAreas = document.querySelectorAll('.close-area');
 
   var searchForm = document.querySelector('.form');
   var submitButton = document.querySelector('.form__button');
@@ -50,6 +51,13 @@
       }
     });
   }
+
+  closeAreas.forEach(function (closeArea) {
+    closeArea.addEventListener('click', function (evt) {
+      var closeButton = closeArea.querySelector('.close-button');
+      closeButton.click();
+    });
+  });
 
   // аккордеон
   closeButtons.forEach(function (closeButton) {
