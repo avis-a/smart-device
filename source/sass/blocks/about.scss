@@ -206,6 +206,10 @@
   position: relative;
   left: 23px;
 
+  @media (max-width: $pre-desktop-width) {
+    left: 13px;
+  }
+
   @media (max-width: $desktop-width) {
     left: -35px;
   }
@@ -247,7 +251,20 @@
   }
 }
 
+.about__text > p:nth-child(2n) {
+  padding-right: 25px;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
 .about__text > p:nth-child(3n) {
+
+  @media (max-width: $pre-desktop-width) {
+    padding-right: 25px;
+  }
+
   @media (max-width: $desktop-width) {
     height: 86px;
     overflow: hidden;
