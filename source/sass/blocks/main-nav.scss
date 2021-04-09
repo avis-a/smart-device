@@ -5,7 +5,7 @@
 
 .main-nav__button {
   @include text(14px, 16px, 700);
-  width: 180px;
+  min-width: 180px;
   height: 48px;
   padding: 0;
   color: $basic_white;
@@ -19,6 +19,7 @@
   cursor: pointer;
   text-decoration: none;
   padding-top: 13px;
+  margin-left: 38px;
 
   @media (max-width: $desktop-width) {
     display: none;
