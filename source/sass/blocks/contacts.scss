@@ -1,6 +1,6 @@
 .contacts {
   display: grid;
-  grid-template-columns: 420px 1fr 1fr;
+  grid-template-columns: 300px 2fr 1fr;
   grid-template-areas:
     "socials cite adress";
   max-width: 1440px;
