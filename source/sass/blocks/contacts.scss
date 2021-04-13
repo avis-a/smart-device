@@ -8,10 +8,6 @@
   padding-bottom: 45px;
 
   @media (max-width: $pre-desktop-width) {
-    grid-template-columns: 300px 2fr 1fr;
-  }
-
-  @media (max-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "socials socials"

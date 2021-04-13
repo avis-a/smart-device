@@ -2,10 +2,6 @@
   padding-left: 31.5%;
 
   @media (max-width: $pre-desktop-width) {
-    padding-left: 3%;
-  }
-
-  @media (max-width: $desktop-width) {
     padding-left: 18px;
     grid-area: adress;
   }
@@ -28,7 +24,7 @@
   color: $navy_blue;
   margin-bottom: 25px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $pre-desktop-width) {
     margin-top: 39px;
   }
 

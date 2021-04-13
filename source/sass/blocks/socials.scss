@@ -1,7 +1,7 @@
 .socials {
   padding-top: 14px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $pre-desktop-width) {
     width: 100%;
     grid-area: socials;
     border-bottom: 1px solid $light_grey;
@@ -17,7 +17,7 @@
 }
 
 .socials__wrapper {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $pre-desktop-width) {
     width: 100%;
     display: flex;
     flex-direction: row;

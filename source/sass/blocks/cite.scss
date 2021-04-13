@@ -1,12 +1,7 @@
 .cite {
   grid-area: cite;
-  // padding-left: 12%;
 
   @media (max-width: $pre-desktop-width) {
-    // padding-left: 5%;
-  }
-
-  @media (max-width: $desktop-width) {
     padding-left: 0;
     order: unset;
     margin-left: unset;
@@ -37,7 +32,7 @@
   color: $navy_blue;
   margin-bottom: 26px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $pre-desktop-width) {
     margin-top: 39px;
   }
 
@@ -53,10 +48,7 @@
   column-gap: 19px;
 
   @media (max-width: $pre-desktop-width) {
-    column-gap: 5px;
-  }
-
-  @media (max-width: $desktop-width) {
+    // column-gap: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
