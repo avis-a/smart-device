@@ -43,13 +43,10 @@
 }
 
 .cite__list {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(2, 1fr);
+  columns: 2;
   column-gap: 19px;
 
   @media (max-width: $pre-desktop-width) {
-    // column-gap: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
