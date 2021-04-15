@@ -20,6 +20,7 @@
   text-decoration: none;
   padding-top: 13px;
   margin-left: 38px;
+  z-index: 2;
 
   @media (max-width: $desktop-width) {
     display: none;
