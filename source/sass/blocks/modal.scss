@@ -132,33 +132,3 @@
   top: 5px;
   left: -44px;
 }
-
-
-.modal__button--close {
-  @include pseudo($display: block, $pos: absolute, $content: "");
-  border: none;
-  width: 25px;
-  height: 25px;
-  top: 16px;
-  right: 25px;
-  background-color: transparent;
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    @include pseudo($display: block, $pos: absolute, $content: "");
-    top: 9px;
-    right: -4px;
-    width: 22.75px;
-    height: 1px;
-    background-color: $basic_white;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
